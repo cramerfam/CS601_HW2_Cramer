@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/toppings.css">
-    <script src="./js/main.js" type="module"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
+
+    <h1>Let's Make a Pizza!</h1>
+    <button id="loadCanvasButton">Load Toppings</button>
+
+    <!-- Draggable Elements -->
+    <div id="canvasContainer"></div>
+
+    <!-- Drop Zones -->
+    <div id="sorting-area">
+        <div id="pizzaDropZone" class="dropzone">Put Toppings on the Pizza</div>
+        <div id="trashDropZone" class="dropzone">Discard Non-Toppings Here</div>
+    </div>
     
 </body>
 </html>

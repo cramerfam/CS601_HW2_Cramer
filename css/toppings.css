@@ -1,0 +1,93 @@
+#canvas-container {
+    width: 100%;
+    height: 300px;
+}
+
+.dropzone {
+    border: 1px solid black;
+    margin: 10px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+#sorting-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
+#pizzaDropZone {
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/crust.png');
+    background-size: cover;
+}
+
+#trashDropZone {
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/trash.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+/* toppings */
+
+#boot {
+    background-image: url('../img/boot.png');
+    background-size: cover;
+}
+
+#car {
+    background-image: url('../img/car.png');
+    background-size: cover;
+}
+
+#cheese {
+    background-image: url('../img/cheese.png');
+    background-size: cover;
+}
+
+#hat {
+    background-image: url('../img/hat.png');
+    background-size: cover;
+}
+
+#mushrooms {
+    background-image: url('../img/mushrooms.png');
+    background-size: cover;
+}
+
+#pepper {
+    background-image: url('../img/pepper.png');
+    background-size: cover;
+}
+
+#peppermint {
+    background-image: url('../img/peppermint.png');
+    background-size: cover;
+}
+
+#pepperoni {
+    background-image: url('../img/pepperoni.png');
+    background-size: cover;
+}
+
+#pineapple {
+    background-image: url('../img/pineapple.png');
+    background-size: cover;
+}
+
+#sauce {
+    background-image: url('../img/sauce.png');
+    background-size: cover;
+}
+
+#toothbrush {
+    background-image: url('../img/toothbrush.png');
+    background-size: cover;
+}
+
+
+

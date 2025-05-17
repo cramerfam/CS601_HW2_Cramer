@@ -1,0 +1,19 @@
+{
+    "realToppings" : [            
+        {"id": 1, "name": "pepperoni"},
+        {"id": 2, "name": "cheese"},
+        {"id": 3, "name": "mushrooms"},
+        {"id": 4, "name": "pepper"},
+        {"id": 5, "name": "sauce"}
+    ],
+    "fakeToppings" : [
+        {"id": 6, "name": "boot"},
+        {"id": 7, "name": "car"},
+        {"id": 8, "name": "toothbrush"},
+        {"id": 9, "name": "peppermint"},
+        {"id": 10, "name": "hat"}
+    ],
+    "debatable" : [
+        {"id": 11, "name": "pineapple"}
+    ]
+}

@@ -33,7 +33,6 @@ loadButton.addEventListener(CLICK, async () => {
     loadButton.classList.add('loaded');
     loadButton.innerText = 'Toppings Loaded';
 
-
     //Get toppings
     toppingsData = await fetchToppingsData();
 
@@ -88,27 +87,38 @@ dropZones.forEach(id => {
 
         //If dropping real toppings on pizza, success!
         if (id === 'pizzaDropZone' && type === 'pizza') {
-            container.appendChild(canvas); 
+            //Move canvas to container (it gets hidden)
+            container.appendChild(canvas);
+            //Unhide the overlay with the corresponding toppings
             let overlay = document.getElementById(`pizza-${canvasId}`);
-            overlay.style.display = 'block';
+            if (overlay) {
+                overlay.style.display = 'block';
+            }
+            //Alert
             infoZone.innerText = SUCCESS_MESSAGE_PIZZA;
-        } else if (id === 'trashDropZone' && type === 'trash'){
+        //If dropping non-toppings into trash, also success!
+        } else if (id === 'trashDropZone' && type === 'trash') {
+            //Move canvas to container (it gets hidden)
             container.appendChild(canvas); 
+            //Alert
             infoZone.innerText = SUCCESS_MESSAGE_TRASH;
         //User can put pineapple in either place
         } else if (type === 'either') { 
-            container.appendChild(canvas); 
+            //Move canvas to container (it gets hidden)
+            container.appendChild(canvas);
+            //If pineapple was put on pizza, unhide the pineapple topping layer
             if (id === 'pizzaDropZone') {
                 let overlay = document.getElementById(`pizza-${canvasId}`);
                 overlay.style.display = 'block';
             }
+            //Alert
             infoZone.innerText = PINEAPPLE_MESSAGE;
         //Otherwise, show an error
         } else {
             infoZone.innerText = FAIL_MESSAGE;
         }
 
-        //If the canvas container is empty, hide it and show a message
+        //If the canvas container is empty, hide it and show a final message
         if (canvasContainer.children?.length === 0) {
             canvasContainer.style.display = 'none';
             loadButton.style.display = 'none';

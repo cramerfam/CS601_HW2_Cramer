@@ -6,18 +6,19 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 /* toppings container */
 
 #canvasContainer {
-    height: 300px;
+    max-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
     margin-bottom: 30px;
+    margin-top: 35px;
 }
 
 #loadToppingsButton {
@@ -52,7 +53,7 @@ h1 {
 }
 
 #info {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: red;
     height: 25px;
@@ -106,56 +107,67 @@ h1 {
 #boot {
     background-image: url('../img/boot.png');
     background-size: cover;
+    width: 100px;
 }
 
 #car {
     background-image: url('../img/car.png');
     background-size: cover;
-}
-
-#cheese {
-    background-image: url('../img/cheese.png');
-    background-size: cover;
+    width: 100px;
 }
 
 #hat {
     background-image: url('../img/hat.png');
     background-size: cover;
+    width: 100px;
 }
 
 #mushrooms {
     background-image: url('../img/mushrooms.png');
     background-size: cover;
+    width: 100px;
+}
+
+#olives {
+    background-image: url('../img/olives.png');
+    background-size: cover;
+    width: 100px;
+}
+
+#onions {
+    background-image: url('../img/onions.png');
+    background-size: cover;
+    width: 100px;
 }
 
 #pepper {
     background-image: url('../img/pepper.png');
     background-size: cover;
+    width: 100px;
 }
 
 #peppermint {
     background-image: url('../img/peppermint.png');
     background-size: cover;
+    width: 100px;
 }
 
 #pepperoni {
     background-image: url('../img/pepperoni.png');
     background-size: cover;
+    width: 100px;
 }
 
 #pineapple {
     background-image: url('../img/pineapple.png');
     background-size: cover;
-}
-
-#sauce {
-    background-image: url('../img/sauce.png');
-    background-size: cover;
+    width: 100px;
 }
 
 #toothbrush {
     background-image: url('../img/toothbrush.png');
     background-size: cover;
+    width: 100px;
 }
 
 /* pizza overlays */
@@ -166,7 +178,7 @@ h1 {
     align-items: flex-end;
 }
 
-#pizza-mushrooms, #pizza-onion, #pizza-pepper, #pizza-olives, #pizza-pepperoni, #pizza-pineapple {
+#pizza-mushrooms, #pizza-onions, #pizza-pepper, #pizza-olives, #pizza-pepperoni, #pizza-pineapple {
     width: 350px;
     position: absolute;
     display: none;

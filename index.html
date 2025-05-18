@@ -10,15 +10,32 @@
 <body>
 
     <h1>Let's Make a Pizza!</h1>
-    <button id="loadCanvasButton">Load Toppings</button>
+    <button id="loadToppingsButton">Load Toppings</button>
 
     <!-- Draggable Elements -->
     <div id="canvasContainer"></div>
 
     <!-- Drop Zones -->
+    <div id="info"></div>
     <div id="sorting-area">
-        <div id="pizzaDropZone" class="dropzone">Put Toppings on the Pizza</div>
-        <div id="trashDropZone" class="dropzone">Discard Non-Toppings Here</div>
+        <div id="pizzaDropZone" class="dropzone">
+            <span class="dropTitle">Place Pizza Toppings Here</span>
+                <img id="pizza" src="./img/crust.png" />
+                <div id="pizzaLayers">
+                    <img id="pizza-mushrooms" src="./img/mushrooms-overlay.png" />
+                    <img id="pizza-onion" src="./img/onion-overlay.png" />
+                    <img id="pizza-pepper" src="./img/pepper-overlay.png" />
+                    <img id="pizza-olives" src="./img/olives-overlay.png" />
+                    <img id="pizza-pepperoni" src="./img/pepperoni-overlay.png" />
+                    <img id="pizza-pineapple" src="./img/pineapple-overlay.png" />
+                </div>
+            <div id="pizzaToppings"></div>
+        </div>
+        <div id="trashDropZone" class="dropzone">
+            <span class="dropTitle">Discard Non-Toppings Here</span>
+            <img id= "trash" src="./img/trash.png" />
+            <div id="trashToppings"></div>
+        </div>
     </div>
     
 </body>

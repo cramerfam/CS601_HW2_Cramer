@@ -1,10 +1,44 @@
-#canvas-container {
-    width: 100%;
-    height: 300px;
+body {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    align-items: center;
 }
 
+h1 {
+    font-size: 60px;
+}
+
+/* toppings container */
+
+#canvasContainer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin-bottom: 30px;
+}
+
+#loadToppingsButton {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#loadToppingsButton:hover {
+    background-color: darkgrey;
+}
+
+#loadToppingsButton.loaded:hover {
+    background-color: #f9f9f9;
+}
+
+/* drop zones */
+
 .dropzone {
-    border: 1px solid black;
     margin: 10px;
     width: 150px;
     display: inline-block;
@@ -17,19 +51,54 @@
     align-items: start;
 }
 
+#info {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    height: 25px;
+    padding-top: 15px;
+}
+
 #pizzaDropZone {
     width: 400px;
     height: 400px;
-    background-image: url('../img/crust.png');
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pizzaToppings, #trashToppings {
+    position: absolute;
+    width: 300px;
+    padding-top: 80px;
+}
+
+#pizzaToppings canvas {
+    display: none;
+}
+
+#trashToppings canvas {
+    display: none;
 }
 
 #trashDropZone {
     width: 400px;
     height: 400px;
-    background-image: url('../img/trash.png');
-    background-size: 90%;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#pizza, #trash {
+    width: 350px;
 }
 
 /* toppings */
@@ -89,5 +158,18 @@
     background-size: cover;
 }
 
+/* pizza overlays */
+
+#pizzaLayers {
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#pizza-mushrooms, #pizza-onion, #pizza-pepper, #pizza-olives, #pizza-pepperoni, #pizza-pineapple {
+    width: 350px;
+    position: absolute;
+    display: none;
+}
 
 

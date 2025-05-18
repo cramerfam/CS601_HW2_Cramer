@@ -1,10 +1,10 @@
 {
     "realToppings" : [            
         {"id": 1, "name": "pepperoni", "goodFor": "pizza"},
-        {"id": 2, "name": "cheese", "goodFor": "pizza"},
+        {"id": 2, "name": "olives", "goodFor": "pizza"},
         {"id": 3, "name": "mushrooms", "goodFor": "pizza"},
         {"id": 4, "name": "pepper", "goodFor": "pizza"},
-        {"id": 5, "name": "sauce", "goodFor": "pizza"}
+        {"id": 5, "name": "onions", "goodFor": "pizza"}
     ],
     "fakeToppings" : [
         {"id": 6, "name": "boot", "goodFor": "trash"},
